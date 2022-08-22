@@ -1,4 +1,4 @@
-import { logger } from '../utils/logger.js';
+import logger  from '../utils/logger.js';
 
 export const errorMiddleware = (error, req, res, next) => {
   const status = error.status || 500;
