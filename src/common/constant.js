@@ -17,7 +17,7 @@ export const msg = {
 export const routes = {
   HOME: '/',
   ABOUT: '/about-us',
-  PRODUCTS: '/products',
   CONTACT: '/contact-us',
+  SANITARY: 'sanitary-ware',
   ADMIN: '/admin',
 };
