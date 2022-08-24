@@ -1514,8 +1514,11 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
       background: rgba(0, 0, 0, 0.2); }
   .hero-slant .container {
     position: relative; }
-  .hero-slant, .hero-slant > .container > .row {
+  .hero-slant{
     height: 120vh; }
+  .hero-slant > .container > .row{
+    padding-top: 20vh;
+  }
   .hero-slant .sign-up-form {
     padding: 10px;
     border-radius: 7px;
@@ -1739,6 +1742,20 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
     -webkit-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     transform: rotate(180deg); }
+
+.category{
+  padding: 12px ;
+  background-color:rgba(255, 255, 255, 0.3);
+  border-radius: 7px;
+}
+.category:hover {
+  background-color:rgba(255, 255, 255, 0.35);
+  -webkit-box-shadow: 0 5px 15px -5px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 5px 15px -5px rgba(255, 255, 255, 0.1); }
+.category > a > h3{
+  font-weight: 400;
+  color:black;
+}
 
 .blog_entry {
   -webkit-transition: .3s all ease;

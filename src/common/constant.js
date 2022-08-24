@@ -18,6 +18,6 @@ export const routes = {
   HOME: '/',
   ABOUT: '/about-us',
   CONTACT: '/contact-us',
-  SANITARY: 'sanitary-ware',
+  SANITARY: '/sanitary-ware',
   ADMIN: '/admin',
 };
