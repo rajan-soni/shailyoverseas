@@ -1485,7 +1485,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
   padding-bottom: 100px !important; }
 
 .floating-block {
-  background: #ffffff;
+  background:whitesmoke;
   -webkit-box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.05);
   box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.05);
   width: 100%;
@@ -1498,7 +1498,22 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
   .floating-block h3 {
     font-size: 13px; }
 
+.showcase-container{
+  background-color: #ccc;
+  position: relative;
+  background-size:cover;
+  background-attachment:scroll;
+  background-repeat: no-repeat; }
+.showcase-container > .container:first-child{
+  padding-top: 20vh;
+}
+.showcase-container > .scrollable{
+  max-height: max-content;
+  overflow-y: scroll;
+}
+
 .hero-slant {
+  height: 120vh;
   background-color: #ccc;
   position: relative;
   background-size: cover; }
@@ -1514,8 +1529,6 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
       background: rgba(0, 0, 0, 0.2); }
   .hero-slant .container {
     position: relative; }
-  .hero-slant{
-    height: 120vh; }
   .hero-slant > .container > .row{
     padding-top: 20vh;
   }
@@ -1745,6 +1758,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 
 .category{
   padding: 12px ;
+  height:85%;
   background-color:rgba(255, 255, 255, 0.3);
   border-radius: 7px;
 }
@@ -2035,6 +2049,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
   color: #e84545; }
 
 .site-footer {
+  background-color: white;
   padding-top: 70px;
   padding-bottom: 30px;
   font-size: 15px; }
