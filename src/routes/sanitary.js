@@ -1,5 +1,11 @@
 import { Router } from 'express';
 import { onePieceData } from '../site-data/one-piece.js';
+import { twoPieceData } from '../site-data/two-piece.js';
+import { wallHungData } from '../site-data/wall-hung.js';
+import { waterClosetData } from '../site-data/water-closet.js';
+import { tableTopBasinData } from '../site-data/table-top-basin.js';
+import { squattingPanData } from '../site-data/squatting-pan.js';
+import { urinalsData } from '../site-data/urinals.js';
 
 const router = new Router();
 
@@ -10,52 +16,55 @@ router.get('/', (req, res, next) => {
 });
 
 router.get('/one-piece-toilet', (req, res, next) => {
-  res.render('pages/one-piece-toilet', {
+  res.render('pages/single-product', {
     title: 'One Piece Toilet',
     products: onePieceData,
   });
 });
 
 router.get('/two-piece-toilet', (req, res, next) => {
-  res.render('pages/two-piece-toilet', {
+  res.render('pages/single-product', {
     title: 'Two Piece Toilet',
+    products: twoPieceData,
   });
 });
 
 router.get('/wall-hung', (req, res, next) => {
-  res.render('pages/wall-hung', {
+  res.render('pages/single-product', {
     title: 'Wall Hung',
+    products: wallHungData,
   });
 });
 
 router.get('/water-closet', (req, res, next) => {
-  res.render('pages/water-closet', {
+  res.render('pages/single-product', {
     title: 'Water Closet',
+    products: waterClosetData,
   });
 });
 
 router.get('/table-top-basin', (req, res, next) => {
-  res.render('pages/table-top-basin', {
+  res.render('pages/single-product', {
     title: 'Table Top Basin',
+    products: tableTopBasinData,
   });
 });
 
-// TODO: REDIRECT to wash basin page
 router.get('/wash-basin', (req, res, next) => {
-  res.render('pages/wash-basin', {
-    title: 'Wash Basin',
-  });
+  res.redirect('/wash-basin');
 });
 
 router.get('/squatting-pan', (req, res, next) => {
-  res.render('pages/squatting-pan', {
+  res.render('pages/single-product', {
     title: 'Squatting Pan',
+    products: squattingPanData,
   });
 });
 
 router.get('/urinals', (req, res, next) => {
-  res.render('pages/urinals', {
+  res.render('pages/single-product', {
     title: 'Urinals & Tank',
+    products: urinalsData,
   });
 });
 
