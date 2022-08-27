@@ -1940,7 +1940,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
     transition: .3s all ease;
     opacity: 1; }
   .gal-item:hover img {
-    opacity: .5; }
+    opacity: .75; }
 
 .social-icons li {
   display: inline-block; }

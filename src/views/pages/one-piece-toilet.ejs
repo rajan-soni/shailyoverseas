@@ -13,103 +13,22 @@
 					</div>
 				</div>
 				<div class="row justify-content-center" data-aos="fade-up"> 
+
 					<!--Item start  -->
+					<% for(var i=0; i < products.length; i++) { %>
 					<div class="col-5 col-md-4 col-lg-3">
 						<div class="card mb-4">
-							<a href="/images/img_h_1-min.jpg" class="gal-item" data-fancybox="gal"  data-caption="First image">
-								<img src="/images/img_h_1-min.jpg" alt="Image" class="card-img-top">
+							<a href="<%= products[i].imageUrl %>" class="gal-item" data-fancybox="gal"  data-caption="<%= products[i].size %>">
+								<img src="<%= products[i].imageUrl %>" alt="Image" class="card-img-top">
 							</a>
 							<div class="card-body">
-								<h5 class="card-title">Card title</h5>
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<h5 class="card-title"><%= products[i].name %></h5>
+								<p class="card-text"><%= products[i].size %></p>
 							</div>
 						</div>
 					</div>
+					<% } %>
 					<!--Item End  -->
-					<div class="col-5 col-md-4 col-lg-3">
-						<div class="card mb-4">
-							<a href="/images/img_h_1-min.jpg" class="gal-item" data-fancybox="gal"  data-caption="First image">
-								<img src="/images/img_h_1-min.jpg" alt="Image" class="card-img-top">
-							</a>
-							<div class="card-body">
-								<h5 class="card-title">Card title</h5>
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-5 col-md-4 col-lg-3">
-						<div class="card mb-4">
-							<a href="/images/img_h_1-min.jpg" class="gal-item" data-fancybox="gal"  data-caption="First image">
-								<img src="/images/img_h_1-min.jpg" alt="Image" class="card-img-top">
-							</a>
-							<div class="card-body">
-								<h5 class="card-title">Card title</h5>
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-5 col-md-4 col-lg-3">
-						<div class="card mb-4">
-							<a href="/images/img_h_1-min.jpg" class="gal-item" data-fancybox="gal"  data-caption="First image">
-								<img src="/images/img_h_1-min.jpg" alt="Image" class="card-img-top">
-							</a>
-							<div class="card-body">
-								<h5 class="card-title">Card title</h5>
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-5 col-md-4 col-lg-3">
-						<div class="card mb-4">
-							<a href="/images/img_h_1-min.jpg" class="gal-item" data-fancybox="gal"  data-caption="First image">
-								<img src="/images/img_h_1-min.jpg" alt="Image" class="card-img-top">
-							</a>
-							<div class="card-body">
-								<h5 class="card-title">Card title</h5>
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-5 col-md-4 col-lg-3">
-						<div class="card mb-4">
-							<a href="/images/img_h_1-min.jpg" class="gal-item" data-fancybox="gal"  data-caption="First image">
-								<img src="/images/img_h_1-min.jpg" alt="Image" class="card-img-top">
-							</a>
-							<div class="card-body">
-								<h5 class="card-title">Card title</h5>
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-5 col-md-4 col-lg-3">
-						<div class="card mb-4">
-							<a href="/images/img_h_1-min.jpg" class="gal-item" data-fancybox="gal"  data-caption="First image">
-								<img src="/images/img_h_1-min.jpg" alt="Image" class="card-img-top">
-							</a>
-							<div class="card-body">
-								<h5 class="card-title">Card title</h5>
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-5 col-md-4 col-lg-3">
-						<div class="card mb-4">
-							<a href="/images/img_h_1-min.jpg" class="gal-item" data-fancybox="gal"  data-caption="First image">
-								<img src="/images/img_h_1-min.jpg" alt="Image" class="card-img-top">
-							</a>
-							<div class="card-body">
-								<h5 class="card-title">Card title</h5>
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							</div>
-						</div>
-					</div>
-					
 
 				</div>
 				<!-- Main Content -->
