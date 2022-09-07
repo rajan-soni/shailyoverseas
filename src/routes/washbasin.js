@@ -1,5 +1,4 @@
 import { Router } from 'express';
-import { wallHungData } from '../site-data/wall-hung.js';
 import { washbasinData } from '../site-data/wash-basin.js';
 import { tableTopBasinData } from '../site-data/table-top-basin.js';
 import { basinPedestalData } from '../site-data/basin-pedestal.js';
@@ -36,10 +35,7 @@ router.get('/wash-basin-pedestal', (req, res, next) => {
 });
 
 router.get('/designer-series', (req, res, next) => {
-  res.render('pages/single-product', {
-    title: 'Designer Series',
-    products: wallHungData,
-  });
+  res.redirect('/wash-basin/designer');
 });
 
 router.get('/wooden-series', (req, res, next) => {

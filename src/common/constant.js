@@ -20,5 +20,6 @@ export const routes = {
   CONTACT: '/contact-us',
   SANITARY: '/sanitary-ware',
   WASHBASIN: '/wash-basin',
+  DESIGNER: '/wash-basin/designer',
   ADMIN: '/admin',
 };
