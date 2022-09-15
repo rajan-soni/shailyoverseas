@@ -19,5 +19,6 @@ export const routes = {
   ABOUT: '/about-us',
   CONTACT: '/contact-us',
   SANITARY: '/sanitary-ware',
+  BATH_ACCESSORIES: '/bathroom-accessories',
   ADMIN: '/admin',
 };
