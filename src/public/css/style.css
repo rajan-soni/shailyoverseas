@@ -1503,7 +1503,8 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
   position: relative;
   background-size:cover;
   background-attachment:scroll;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  padding-bottom: 20%; }
 .showcase-container > .container:first-child{
   padding-top: 20vh;
 }
@@ -1763,16 +1764,16 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 .category{
   padding: 12px ;
   height:85%;
-  background-color:rgba(255, 255, 255, 0.3);
+  background-color:rgba(0, 0, 0, 0.25);
   border-radius: 7px;
 }
 .category:hover {
-  background-color:rgba(255, 255, 255, 0.35);
-  -webkit-box-shadow: 0 5px 15px -5px rgba(255, 255, 255, 0.1);
-  box-shadow: 0 5px 15px -5px rgba(255, 255, 255, 0.1); }
+  background-color:rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.1); }
 .category > a > h3{
-  font-weight: 400;
-  color:black;
+  font-weight: 500;
+  color: #ddd;
 }
 
 .blog_entry {
