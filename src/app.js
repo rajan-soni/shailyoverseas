@@ -23,6 +23,12 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(routes);
 
+app.use('**', (req, res, next) => {
+  res.render('pages/not-found', {
+    title: 'Page Not Found',
+  });
+});
+
 app.use(errorMiddleware);
 
 export default app;
