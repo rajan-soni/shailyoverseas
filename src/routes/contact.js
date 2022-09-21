@@ -9,7 +9,6 @@ router.get('/', (req, res, next) => {
 });
 
 router.post('/submit-form', (req, res, next) => {
-  throw new Error('TEst');
   // TODO: add email service here
   res.render('pages/not-found', {
     title: 'Submitted',
